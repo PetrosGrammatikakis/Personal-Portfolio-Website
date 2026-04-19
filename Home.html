@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="backGround">
+<body>
 
     <!-- Navigator for the Website-->
     <nav class="navbar navbar-expand-lg sticky-top " id="nav1">
@@ -40,7 +40,7 @@
     </nav>
 
 
-    <!-- First 'page' for the Website-->
+    <!-- Hero 'page' for the Website-->
     <header data-aos="slide-down" class="container-fluid  vh-100 md-vh-100 d-flex align-items-center mb-4 me-3 "
         id="HeaderSection">
         <div class="container">
@@ -73,7 +73,7 @@
     </header>
 
 
-    <!-- Second 'page' for the Website-->
+    <!-- About Me 'page' for the Website-->
 
 
     <section data-aos="slide-right"
@@ -108,7 +108,7 @@
     </section>
 
 
-    <!--  third 'page' for the Website-->
+    <!--  Skills 'page' for the Website-->
     <section data-aos="slide-right" class="container  d-flex align-items-center text-light py-4 mb-4" id="Skills">
 
         <div class="container">
@@ -118,10 +118,10 @@
 
             <div class="row justify-content-center ">
                 <div class="col-md-6 ">
-                    <h2 class="text-center my-5">💻Programming Languages</h2>
-                    <hr>
 
-                    <div class="styleBox styleBoxContent mt-4">
+                    <h2 class="text-center my-5 " style="white-space: nowrap;">💻Programming Languages</h2>
+                    <hr>
+                    <div class="styleBox styleBoxContent ">
 
 
                         <div class="mb-4">
@@ -180,7 +180,7 @@
                 </div>
 
 
-                <div class="col-md-6 ">
+                <div class="col-md-6  ">
                     <h2 class="text-center my-5">🧠Soft Skills</h2>
                     <hr>
 
@@ -189,6 +189,7 @@
                         <li>Teamwork</li>
                         <li>Communication</li>
                         <li>Critical Thinking</li>
+
                     </ul>
                 </div>
 
@@ -275,7 +276,7 @@
                     <h2 class="text-center my-5 "><i class="bi bi-diagram-3-fill"></i>IT & Networking</h2>
                     <hr>
                     <ul class="text-center  d-flex align-items-center flex-column">
-                        <li>Active Directory, </li>
+                        <li>Active Directory</li>
                         <li>Technical Support</li>
                         <li>Networking</li>
                     </ul>
@@ -288,56 +289,87 @@
     </section>
 
 
-    <!-- Fourth 'page' for the Website-->
+    <!-- Projects 'page' for the Website-->
 
-    <section class="container   d-flex align-items-center text-light py-4 mb-4" id="Projects">
-
-
+    <section data-aos="slide-right" class="container   d-flex align-items-center text-light py-4 mb-4" id="Projects">
         <div class="container">
-            <h1 class=" fw-bold text-md-center ">Projects</h1>
-
-
-            <div  class="row ">
-                <div class=" col-md-6 mb-5  fs-md-1  fs-4 fw-bold   text-light ">
-                    <div class="card" style="width: 18rem;">
-                        <img src="PHOTO/WebIcon.png" class="card-img-top" alt="...">
+            <h1 class=" text-center my-5 text-decoration-underline fs-1 fw-bold ">Projects</h1>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card text-bg-primary">
+                        <img src="PHOTO/generated_image_5444_2026-02-18_19-28-34.png" class="card-img-top imgCardSize"
+                            alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">StableCanvas Studio</h5>
+                            <h5 class="card-title text-decoration-underline">StableCanvas-Studio</h5>
                             <p class="card-text">StableCanvas Studio is a desktop GUI application built with Python
                                 (Tkinter) that leverages the Stability AI API for advanced image generation. It supports
                                 multiple generation modes, including text-to-image, image-to-image, structural guidance,
-                                and
-                                outpainting. The app also features JSON-based scene management for organized prompt
+                                and outpainting. The app also features JSON-based scene management for organized prompt
                                 workflows, making it ideal for structured creative projects and portfolio
-                                demonstrations..
-                            </p>
-                            <a href="https://github.com/PetrosGrammatikakis/StableCanvas-Studio"
-                                class="btn btn-dark">GitHub Repository</a>
+                                demonstrations</p><a href="https://github.com/PetrosGrammatikakis/StableCanvas-Studio"
+                                target="_blank" class="btn btn-dark">View Project <img src="PHOTO/git_icon.png" alt=""
+                                    style="width: 20px;"></a>
                         </div>
                     </div>
-                    <div class=" col-md-6 mb-5  text-light">
-                        <div class="card" style="width: 18rem;">
-                            <img src="PHOTO/WebIcon.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">StableCanvas Studio</h5>
-                                <p class="card-text">StableCanvas Studio is a desktop GUI application built with Python
-                                    (Tkinter) that leverages the Stability AI API for advanced image generation. It
-                                    supports
-                                    multiple generation modes, including text-to-image, image-to-image, structural
-                                    guidance, and
-                                    outpainting. The app also features JSON-based scene management for organized prompt
-                                    workflows, making it ideal for structured creative projects and portfolio
-                                    demonstrations..
-                                </p>
-                                <a href="https://github.com/PetrosGrammatikakis/StableCanvas-Studio"
-                                    class="btn btn-dark">GitHub Repository</a>
-                            </div>
-                        </div>
-
-
-                    </div>
-
                 </div>
+                <div class="col">
+                    <div class="card text-bg-warning ">
+                        <img src="PHOTO/ic_launcher-playstore.png" class="card-img-top imgCardSize" alt="Slot Machine App Icon">
+                        <div class="card-body">
+                            <h5 class="card-title text-decoration-underline">SlotMachineApp1.2</h5>
+                            <p class="card-text">SlotMachineApp1.2 is a simple mobile slot machine game built using
+                                Kotlin in Android Studio, with the assistance of AI tools during development.
+                                <br>
+                                The app focuses on gameplay, coin progression, and basic customization through an
+                                in-game shop system.All player data (coins, progress, and settings) is saved locally on
+                                the device
+                                Ensures progress is not lost after closing the app. Made for a class by Nikolaos
+                                Paloukis and Petros Grammatikakis
+                            </p><a href="https://github.com/PetrosGrammatikakis/SlotMachineApp1.2" target="_blank"
+                                class="btn btn-dark">View Project <img src="PHOTO/git_icon.png" alt=""
+                                    style="width: 20px;"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card text-bg-dark">
+                        <img src="PHOTO/Ιστορική_Εγγ_Διάγραμμα.jpg" class="card-img-top imgCardSize" alt="Historical Encyclopedia Icon">
+                        <div class="card-body">
+                            <h5 class="card-title text-decoration-underline">
+                                Web Application for a Historical Encyclopedia Theme
+                            </h5>
+                            <p class="card-text">A Group project for the University that connects the front-end,
+                                back-end and database so you
+                                can insert data with forms. The theme is historical encyclopedia and we are using 3
+                                tables.</p>
+                            </p><a
+                                href="https://github.com/PetrosGrammatikakis/Development-of-a-Web-Application-for-a-Historical-Encyclopedia"
+                                target="_blank" class="btn btn-dark">View Project <img src="PHOTO/git_icon.png" alt="GitHub Icon"
+                                    style="width: 20px;"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-bg-secondary">
+                        <img src="PHOTO/ShapeIcon.png" class="card-img-top imgCardSize" alt="Shape Icon">
+                        <div class="card-body">
+                            <h5 class="card-title text-decoration-underline">Change of shape characteristics with JavaFX
+                            </h5>
+                            <p class="card-text">This project is a JavaFX application that allows users to interactively
+                                explore and modify different geometric shapes.
+                                The application provides a simple graphical interface where users can choose between
+                                multiple shapes.</p>
+                            <a href="https://github.com/PetrosGrammatikakis/Change-of-shape-characteristics-with-JavaFX/tree/main"
+                                target="_blank" class="btn btn-dark">View Project <img src="PHOTO/git_icon.png" alt="GitHub Icon"
+                                style="width: 20px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
 
     </section>
