@@ -13,7 +13,7 @@ const translations = {
           Μαθαίνω συνεχώς νέες τεχνολογίες και βελτιώνω τις δεξιότητές μου, καθώς εξελίσσομαι στον χώρο της ανάπτυξης λογισμικού.`,
 
 
-    en: ` I was born and raised in Alexandroupolis and am a graduate of the Department of Computer Science of the
+    en: ` I was born and raised in Alexandroupolis and i am a graduate of the Department of Computer Science of the
           Democritus University of Thrace. I am particularly interested in the field of programming and
           web application development, with the aim of developing as a Software Engineer. 
 
