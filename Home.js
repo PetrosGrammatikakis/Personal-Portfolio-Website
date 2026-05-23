@@ -1,25 +1,19 @@
-
-//button for Language
-const button = document.getElementById('Translate');
 const summary = document.getElementById('summary');
-const Lang = document.getElementById('Lang');
+const btnEn = document.getElementById("btn-en");
+const btnGr = document.getElementById("btn-gr");
+
 const translations = {
-    gr: ` Γεννήθηκα και μεγάλωσα στην Αλεξανδρούπολη και είμαι απόφοιτος του Τμήματος Πληροφορικής του
-          Δημοκριτείου Πανεπιστημίου Θράκης. Με ενδιαφέρει ιδιαίτερα ο τομέας του προγραμματισμού και της
-          ανάπτυξης web εφαρμογών, με στόχο να εξελιχθώ ως Software Engineer. 
- 
-          Έχω εμπειρία στον προγραμματισμό, την ανάπτυξη ιστοσελίδων και βασική κατανόηση του IT and networks.
-          Μέσω ακαδημαϊκών και προσωπικών έργων, έχω αναπτύξει πρακτικές δεξιότητες στην κατασκευή εφαρμογών λογισμικού.
-          Μαθαίνω συνεχώς νέες τεχνολογίες και βελτιώνω τις δεξιότητές μου, καθώς εξελίσσομαι στον χώρο της ανάπτυξης λογισμικού.`,
+    gr: `Απόφοιτος Πληροφορικής από το Δημοκρίτειο Πανεπιστήμιο Θράκης με έντονο ενδιαφέρον για την ανάπτυξη λογισμικού και διαδικτυακών εφαρμογών.
+          Έμπειρος στην κατασκευή διαδικτυακών εφαρμογών μέσω ακαδημαϊκών και προσωπικών έργων χρησιμοποιώντας σύγχρονες τεχνολογίες ιστού. 
+        Επιπλέον, έχω βασική κατανόηση συστημάτων πληροφορικής, βάσεων δεδομένων και δικτύων υπολογιστών.`,
 
 
-    en: ` I was born and raised in Alexandroupolis and i am a graduate of the Department of Computer Science of the
-          Democritus University of Thrace. I am particularly interested in the field of programming and
-          web application development, with the aim of developing as a Software Engineer. 
-
-          I have experience in programming, web development, and a basic understanding of IT and networks.
-          Through academic and personal projects, I have developed practical skills in building software applications.
-          I am constantly learning new technologies and improving my skills as I progress in the software development field.`};
+    en: ` Computer Science graduate from the Democritus University of Thrace with
+           a strong interest in software and web application development.
+           Experienced in building web applications through academic and personal
+           projects using modern web technologies. Additionally, I have a basic
+           understanding of IT systems, databases, and computer networks.`
+};
 
 
 
@@ -29,11 +23,27 @@ let lang = 'en';
 // initial render
 summary.textContent = translations[lang];
 
-Lang.addEventListener('change', () => {
-    lang = Lang.value === 'Greek' ? 'gr' : 'en';
+btnEn.addEventListener("click", () => {
+    lang = "en";
     summary.textContent = translations[lang];
-    button.textContent = lang === 'gr' ? 'Greek' : 'English';
-})
+
+    btnEn.classList.add("btn-light");
+    btnEn.classList.remove("btn-outline-light");
+
+    btnGr.classList.add("btn-outline-light");
+    btnGr.classList.remove("btn-light");
+});
+
+btnGr.addEventListener("click", () => {
+    lang = "gr";
+    summary.textContent = translations[lang];
+
+    btnGr.classList.add("btn-light");
+    btnGr.classList.remove("btn-outline-light");
+
+    btnEn.classList.add("btn-outline-light");
+    btnEn.classList.remove("btn-light");
+});
 
 
 

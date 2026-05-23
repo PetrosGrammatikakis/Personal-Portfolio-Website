@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
-    <link rel="icon" href="PHOTO/WebIcon.png">
+    <link rel="icon" href="https://res.cloudinary.com/do71ozwtk/image/upload/v1779450088/WebIcon_zud8am.png">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
     <!--Style-->
@@ -18,372 +18,310 @@
 
 <body>
 
-    <!-- Navigator for the Website-->
-    <nav class="navbar navbar-expand-lg sticky-top " id="nav1">
+    <!-- Nav Section -->
+    <nav class="navbar navbar-expand-lg sticky-top  " id="nav1">
         <div class="container-fluid ">
-            <a class="navbar-brand" href="#HeaderSection">Home</a>
+            <a class="navbar-brand text-light navBarHover  " href="#HeaderSection">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list "></i>
+                <i class="bi bi-list text-light"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav w-100 d-flex justify-content-evenly text-light">
+                <div class="navbar-nav w-100 d-flex  ">
 
-                    <a class="nav-link " aria-current="page" href="#AboutMe">About Me</a>
-                    <a class="nav-link" href="#Skills">Skills</a>
-                    <a class="nav-link" href="#Projects">Projects</a>
-                    <a class="nav-link" href="#Contact">Contact</a>
+                    <a class="nav-link text-light navBarHover" aria-current="page" href="#Skills">Skills</a>
+                    <a class="nav-link text-light navBarHover" href="#Projects">Projects</a>
+
 
                 </div>
             </div>
         </div>
     </nav>
 
-
-    <!-- Hero 'page' for the Website-->
-    <header  class="container-fluid  vh-100 md-vh-100 d-flex align-items-center mb-4 me-3 "
-        id="HeaderSection">
+    <!-- Hero Section-->
+    <header class="container-fluid   d-flex align-items-center mb-4 my-3 " id="HeaderSection">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center ">
 
                 <!-- Image -->
-                <div  class=" col-xl-6 col-md-12 col-lg-12 text-center mb-4 mb-md-4 ">
-                    <img src="PHOTO/profil.webp" class="img-fluid shadow img-thumbnail " alt="Profile Photo"
-                        style="max-width: 460px;" />
-                </div>
+                <div data-aos="slide-right" class=" col-xl-12 col-md-12 col-lg-12 text-center mb-4 mb-md-4 ">
+                    <img src="https://res.cloudinary.com/do71ozwtk/image/upload/v1779450088/profil_swuslh.webp"
+                        class="img-fluid shadow img-thumbnail " alt="Profile Photo" style="max-width: 400px;" />
 
-                <!-- Text -->
-                <div data-aos="fade-left" class=" col-xl-6 col-md-12 col-lg-12 text-center fw-bold ">
-                    <h1 class="fw-bold">Petros Grammatikakis</h1>
-                    <h3 class="text-muted">Junior Software Engineer</h3>
 
-                    <p class="mt-3">
-                        Computer Science graduate trying to be Software Engineer .
-                    </p>
+                    <!-- Text -->
+                    <div class=" col-xl-12 col-md-12 col-lg-12 text-center text-light fw-bold ">
+                        <h1 class="fw-bold">Petros Grammatikakis</h1>
+                        <h3>Junior Full-Stack Web Developer
+                        </h3>
 
-                    <div class="mt-4">
-                        <a href="https://github.com/PetrosGrammatikakis" target="_blank" class="btn btn-dark">
-                            GitHub Profile</a>
+
+                        <div class="mt-4">
+                            <a href="https://github.com/PetrosGrammatikakis" target="_blank" class="btn btn-dark">
+                                GitHub Profile</a>
+                            <a href="https://www.linkedin.com/in/petros-grammatikakis-893b25297" target="_blank"
+                                class="btn btn-primary">
+                                Linked In Profile</a>
+                        </div>
+
+
                     </div>
                 </div>
 
             </div>
         </div>
-        </div>
+
     </header>
 
 
-    <!-- About Me 'page' for the Website-->
+    <!-- About Me Section -->
+
+    <section
+        class="container  d-flex flex-column justify-content-center align-items-center text-center text-light py-4 mb-4  overlay-box ">
+        <h1 class=" text-center section-title mb-5 ">ABOUT ME</h1>
+        <p class="fw-bold text-md-center " id="summary"></p>
+        <label for="Lang">Choose language:</label>
 
 
-    <section data-aos="slide-right"
-        class="container  full-height-lg d-flex flex-column justify-content-center align-items-center text-center text-light py-4 mb-4  w-100"
-        id="AboutMe">
-        <div data-aos="fade-out" class="row">
-            <div class="col-12 md-5 pt-5  mb-5 fs-4  text-light ">
-                <h1 class=" fw-bold text-md-center overlay-box  ">ABOUT ME </h1>
-            </div>
+        <div class="d-flex gap-2 mt-3">
+            <button id="btn-en" class="btn btn-light rounded-pill px-4">
+                English
+            </button>
+
+            <button id="btn-gr" class="btn btn-outline-light rounded-pill px-4">
+                Greek
+            </button>
         </div>
+    </section>
 
-        <div data-aos="fade-out" class="row">
-            <div class="col-12 mb-5 fs-md-5  fs-4 fw-bold   text-light">
-                <p class="fw-bold text-md-center overlay-box" id="summary"></p><!--Summary look js-->
 
+    <!-- Skills section -->
+
+    <section class="skills-section container py-5 text-light overlay-box mb-4 " id="Skills">
+
+        <h1 class="section-title text-center mb-5">SKILLS </h1>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+                    <h4>Programming Languages</h4>
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>Java</span>
+                    </div>
+                </div>
             </div>
-        </div>
 
 
-        <div class="row">
-            <div class="col-12  fs-4 fw-bold text-light overlay-box  ">
-
-                <label for="Lang">Choose language:</label>
-                <select class='btn text-dark bg-primary-subtle' name="Lang" id="Lang">
-                    <option value="Greek">Greek</option>
-                    <option value="English" selected>English</option>
-                </select>
-
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+                    <h4>Frontend</h4>
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Bootstrap</span>
+                        <span>EJS</span>
+                    </div>
+                </div>
             </div>
+
+            <!-- Card -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+                    <h4>Backend</h4>
+                    <div class="tags">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+                    <h4>Databases</h4>
+                    <div class="tags">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>Mongoose</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+                    <h4>Tools</h4>
+                    <div class="tags">
+                        <span>Visual Studio Code</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Git Bash</span>
+                        <span>NPM</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+
+                    <h4>Soft Skills</h4>
+
+                    <div class="tags">
+                        <span>Problem Solving</span>
+                        <span>Teamwork</span>
+                        <span>Communication</span>
+                        <span>Critical Thinking </span>
+                        <span>Adaptability</span>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
         </div>
 
     </section>
 
 
-    <!--  Skills 'page' for the Website-->
-    <section data-aos="slide-right" class="container  d-flex align-items-center text-light py-4 mb-4" id="Skills">
+    <!-- Project Section -->
+    <section class="container  py-5 text-light overlay-box " id="Projects">
+        <h1 class=" text-center section-title mb-5 ">PROJECTS</h1>
 
-        <div class="container">
-            <h1 class="text-center my-5 text-decoration-underline fs-1 fw-bold">SKILLS</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-3 text-center ">
 
-            <!--Programming Languages and Soft Skills-->
-
-            <div class="row justify-content-center ">
-                <div class="col-md-6 ">
-
-                    <h2 class="text-center my-5 " style="white-space: nowrap;">💻Programming Languages</h2>
-                    <hr>
-                    <div class="styleBox styleBoxContent ">
-
-
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <span>JavaScript</span>
-                                <span>60%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" style="--value: 60%;"></div>
-                            </div>
-                        </div>
-
-
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <span>SQL</span>
-                                <span>50%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-primary" style="--value: 50%;"></div>
-                            </div>
-                        </div>
-
-
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <span>Java</span>
-                                <span>50%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" style="--value: 50%;"></div>
-                            </div>
-                        </div>
-
-
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <span>C++/C,</span>
-                                <span>30%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-success" style="--value: 30%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <span>Python,</span>
-                                <span>30%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-light" style="--value: 30%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6  ">
-                    <h2 class="text-center my-5">🧠Soft Skills</h2>
-                    <hr>
-
-                    <ul class=" text-center  d-flex align-items-center flex-column ">
-                        <li>Problem Solving</li>
-                        <li>Teamwork</li>
-                        <li>Communication</li>
-                        <li>Critical Thinking</li>
-
-                    </ul>
-                </div>
-
-
-
-            </div>
-
-
-            <!-- Web Development and IT & Networking-->
-
-            <div class="row justify-content-center">
-                <div class="col-md-6 ">
-                    <h2 class="text-center  my-5 "><i class="bi bi-database"></i>Web Development</h2>
-                    <hr>
-                    <div class="styleBox styleBoxContent ">
-                        <h4 class="text-decoration-underline">Frontend</h4>
-
-
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <span>HTML5</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" style="--value: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <span>CSS3</span>
-                                <span>50%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar primary-subtle" style="--value: 50%;"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <span>Bootstrap</span>
-                                <span>50%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-success" style="--value: 50%;"></div>
-                            </div>
-                        </div>
-
-
-                        <h4 class="text-decoration-underline">Backend</h4>
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <span>Node.js</span>
-                                <span>20%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-info-subtle" style="--value: 20%;"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <span>Express.js</span>
-                                <span>20%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning-subtle" style="--value: 20%;"></div>
-                            </div>
-                        </div>
-
-
-                        <h4 class="text-decoration-underline">Database</h4>
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between">
-                                <span>MySQL</span>
-                                <span>50%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-body-tertiary" style="--value: 50%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 ">
-
-                    <h2 class="text-center my-5 "><i class="bi bi-diagram-3-fill"></i>IT & Networking</h2>
-                    <hr>
-                    <ul class="text-center  d-flex align-items-center flex-column">
-                        <li>Active Directory</li>
-                        <li>Technical Support</li>
-                        <li>Networking</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Projects 'page' for the Website-->
-
-    <section data-aos="slide-right" class="container   d-flex align-items-center text-light py-4 mb-4" id="Projects">
-        <div class="container">
-            <h1 class=" text-center my-5 text-decoration-underline fs-1 fw-bold ">PROJECTS</h1>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card text-bg-primary">
-                        <img src="PHOTO/generated_image_5444_2026-02-18_19-28-34.png" class="card-img-top imgCardSize"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-decoration-underline">StableCanvas-Studio</h5>
-                            <p class="card-text">StableCanvas Studio is a desktop GUI application built with Python
-                                (Tkinter) that leverages the Stability AI API for advanced image generation. It supports
-                                multiple generation modes, including text-to-image, image-to-image, structural guidance,
-                                and outpainting. The app also features JSON-based scene management for organized prompt
-                                workflows, making it ideal for structured creative projects and portfolio
-                                demonstrations</p><a href="https://github.com/PetrosGrammatikakis/StableCanvas-Studio"
-                                target="_blank" class="btn btn-dark">View Project <img src="PHOTO/git_icon.png" alt=""
-                                    style="width: 20px;"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card text-bg-secondary">
-                        <img src="PHOTO/Project-camp-website.png" class="card-img-top imgCardSize" alt=" Icon">
-                        <div class="card-body">
-                            <h5 class="card-title text-decoration-underline">Project-Camp-Website
-                            </h5>
-                            <p class="card-text">A full-stack campground web application inspired by YelpCamp (The Web
-                                Developer Bootcamp by Colt Steele, Udemy). Built to practice RESTful routing,
-                                authentication, CRUD operations, and database integration, with custom styling.</p>
+            <!-- Project-Camp-Website -->
+            <div class="col ">
+                <div class="book">
+                    <div class="d-flex flex-column  overlay-box">
+                        <h5 class="fs-3">Project-Camp-Website</h5>
+                        <div class="mt-1 text-start project-description">
+                            <ul>
+                                <li> Developed a full-stack campground web application inspired by YelpCamp.</li>
+                                <li> Implemented authentication and authorization using Passport.js.</li>
+                                <li> Added image uploads with Cloudinary integration.</li>
+                                <li> Integrated interactive maps using MapTiler API.</li>
+                                <li> Applied security middleware using Helmet and MongoDB sanitization.</li>
+                            </ul>
+                            <p>Tech: Node.js, Express.js, MongoDB, Mongoose,
+                                EJS, JavaScript, Bootstrap, Cloudinary, MapTiler</p>
                             <a href="https://github.com/PetrosGrammatikakis/Project-Camp-Website" target="_blank"
-                                class="btn btn-dark">View Project <img src="PHOTO/git_icon.png" alt="GitHub Icon"
-                                    style="width: 20px;"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card card text-bg-dark">
-                        <img src="PHOTO/Ιστορική_Εγγ_Διάγραμμα.jpg" class="card-img-top imgCardSize"
-                            alt="Historical Encyclopedia Icon">
-                        <div class="card-body">
-                            <h5 class="card-title text-decoration-underline">
-                                Web Application for a Historical Encyclopedia Theme
-                            </h5>
-                            <p class="card-text">A Group project for the University that connects the front-end,
-                                back-end and database so you
-                                can insert data with forms. The theme is historical encyclopedia and we are using 3
-                                tables.</p>
-                            </p><a
-                                href="https://github.com/PetrosGrammatikakis/Development-of-a-Web-Application-for-a-Historical-Encyclopedia"
-                                target="_blank" class="btn btn-dark">View Project <img src="PHOTO/git_icon.png"
+                                class="btn btn-dark">View Project <img
+                                    src="https://res.cloudinary.com/do71ozwtk/image/upload/v1779450087/git_icon_mlllb2.png"
                                     alt="GitHub Icon" style="width: 20px;"></a>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card text-bg-warning ">
-                        <img src="PHOTO/ic_launcher-playstore.png" class="card-img-top imgCardSize"
-                            alt="Slot Machine App Icon">
-                        <div class="card-body">
-                            <h5 class="card-title text-decoration-underline">SlotMachineApp1.2</h5>
-                            <p class="card-text">SlotMachineApp1.2 is a simple mobile slot machine game built using
-                                Kotlin in Android Studio, with the assistance of AI tools during development.
-                                <br>
-                                The app focuses on gameplay, coin progression, and basic customization through an
-                                in-game shop system.All player data (coins, progress, and settings) is saved locally on
-                                the device
-                                Ensures progress is not lost after closing the app. Made for a class by Nikolaos
-                                Paloukis and Petros Grammatikakis
-                            </p><a href="https://github.com/PetrosGrammatikakis/SlotMachineApp1.2" target="_blank"
-                                class="btn btn-dark">View Project <img src="PHOTO/git_icon.png" alt=""
-                                    style="width: 20px;"></a>
-
-                        </div>
+                    <div class="cover">
+                        <img class="imgProject"
+                            src="https://res.cloudinary.com/do71ozwtk/image/upload/v1779450088/Project-camp-website_fbv7az.png"
+                            alt="Project-Camp-Photo">
                     </div>
                 </div>
+            </div>
+
+            <!--StableCanvas Studio -->
+
+            <div class="col">
+                <div class="book">
+                    <div class="d-flex flex-column  overlay-box ">
+                        <h5 class="fs-3">StableCanvas Studio</h5>
+                        <div class="mt-3 text-start project-description">
+                            <ul>
+                                <li>Built a desktop GUI application for AI-powered image generation</li>
+                                <li>Integrated Stability AI API for text-to-image workflows</li>
+                                <li>Implemented outpainting and structure-guided generation</li>
+                                <li>Added real-time preview and JSON scene management</li>
+                            </ul>
+                            <p class="pt-4"> Tech: Node.js, Express.js, MongoDB, Mongoose,
+                                EJS, JavaScript, Bootstrap, Cloudinary, MapTiler</p>
+                            <a href="https://github.com/PetrosGrammatikakis/StableCanvas-Studio" target="_blank"
+                                class="btn btn-dark">View Project <img
+                                    src="https://res.cloudinary.com/do71ozwtk/image/upload/v1779450087/git_icon_mlllb2.png"
+                                    alt="" style="width: 20px;"></a>
+                        </div>
+                    </div>
+                    <div class="cover">
+                        <img class="imgProject"
+                            src="https://res.cloudinary.com/do71ozwtk/image/upload/v1779479880/%CE%A3%CF%84%CE%B9%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF%85%CF%80%CE%BF_%CE%BF%CE%B8%CF%8C%CE%BD%CE%B7%CF%82_2026-05-22_225619_jqrfvi.png"
+                            alt="Project-Camp-Photo">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SlotMachineApp1.2 -->
+            <div class="col">
+                <div class="book">
+                    <div class="d-flex flex-column  overlay-box">
+                        <h5 class="fs-3">SlotMachineApp1.2</h5>
+                        <div class="mt-3 text-start project-description">
+                            <ul>
+                                <li> Built using Kotlin in Android Studio, with the assistance of AI tools during
+                                    development</li>
+                                <li> The app focuses on gameplay, coin progression, and basic customization through
+                                    an
+                                    in-game shop system.</li>
+                                <li> All player data (coins, progress, and settings) is saved locally on
+                                    the device</li>
+                                <li> Ensures progress is not lost after closing the app. </li>
+                            </ul>
+                            <p class="pt-4"> Tech:Android Studio ,Kotlin </p>
+                            <a href="https://github.com/PetrosGrammatikakis/SlotMachineApp1.2" target="_blank"
+                                class="btn btn-dark">View Project <img
+                                    src="https://res.cloudinary.com/do71ozwtk/image/upload/v1779450087/git_icon_mlllb2.png"
+                                    alt="" style="width: 20px;"></a>
+                        </div>
+                    </div>
+                    <div class="cover">
+                        <img class="imgProject"
+                            src="https://res.cloudinary.com/do71ozwtk/image/upload/v1779517401/slotmachine2.png"
+                            alt="Project-Camp-Photo">
+                    </div>
+                </div>
+            </div>
 
 
+
+            <!-- Web Application for a Historical Encyclopedia Theme -->
+            <div class="col">
+                <div class="book">
+                    <div class="d-flex flex-column  overlay-box">
+                        <h5 class="fs-3"> Web Application for a Historical Encyclopedia Theme</h5>
+                        <div class="mt-3 text-start project-description">
+                            <ul class="">
+                                <li> A Group project for the University that connects the front-end,
+                                    back-end and database so you
+                                    can insert data with forms. The theme is historical encyclopedia and we are
+                                    using 3
+                                    tables.</li>
+
+
+                            </ul>
+                            <p class="pt-4 mb-5"> Tech:PHP,CSS,HTML,MySQL </p>
+                            <a href="https://github.com/PetrosGrammatikakis/Development-of-a-Web-Application-for-a-Historical-Encyclopedia"
+                                target="_blank" class="btn btn-dark">View Project <img
+                                    src="https://res.cloudinary.com/do71ozwtk/image/upload/v1779450087/git_icon_mlllb2.png"
+                                    alt="" style="width: 20px;"></a>
+                        </div>
+                    </div>
+                    <div class="cover">
+                        <img class="imgProject"
+                            src="https://res.cloudinary.com/do71ozwtk/image/upload/v1779517819/copy_of____ay41us.jpg"
+                            alt="Project-Camp-Photo">
+                    </div>
+                </div>
             </div>
         </div>
-
 
     </section>
 
 
-    <!-- Contact 'page' for the Website-->
+
+    <!--Footer Section -->
     <footer id="Contact" class="container-fluid text-center text-light py-3 overlay-box">
-        <h3 class="text-center fs-4 fw-bold ">CONTACT ME</h3>
-        <a href="https://www.linkedin.com/in/petros-grammatikakis-893b25297" target="_blank" class="btn bg-primary">
-            <img src="PHOTO/linkedIn_icon1.png" alt="LinkedIn Icon" style="width: 20px;">
-        </a>
+        <pclass="text-center fs-4 fw-bold ">&copy;Petros Grammatikakis</p>
     </footer>
 
 
@@ -402,22 +340,22 @@
 
 
 
-    <script src="Home.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 2000,
-            once: false,
-            mirror: true,
-            offset: 100
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
+    <script src=" Home.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 2000,
+                    once: false,
+                    mirror: true,
+                    offset: 100
+                });
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+                integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
